@@ -80,6 +80,8 @@
             } while (CurrentCell != null);// when null, indicates the end of the list has been reached
 
 
+            return GetGrid();
+
         }
 
         //
