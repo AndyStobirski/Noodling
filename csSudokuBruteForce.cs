@@ -79,11 +79,19 @@
 
             } while (CurrentCell != null);// when null, indicates the end of the list has been reached
 
+
+        }
+
+        //
+        //  Get the cell values from the grid generic as an integer array
+        //
+        public int[] GetGrid()
+        {
             //return the solved grid as 1d array
             return grid .OrderBy(c => c.Row)
                         .ThenBy(c => c.Col)
                         .Select(c => c.Value)
-                        .ToArray();
+                        .ToArray();            
         }
 
         /// <summary>
